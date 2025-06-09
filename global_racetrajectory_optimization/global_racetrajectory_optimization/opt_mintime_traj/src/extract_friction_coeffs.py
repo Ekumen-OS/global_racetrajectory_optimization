@@ -72,7 +72,7 @@ def extract_friction_coeffs(reftrack: np.ndarray,
 
     # plot position of extracted friction coefficients
     if plot_debug:
-        plt.figure(0) 
+        plt.figure(0)
 
     # ------------------------------------------------------------------------------------------------------------------
     # CALCULATION ------------------------------------------------------------------------------------------------------

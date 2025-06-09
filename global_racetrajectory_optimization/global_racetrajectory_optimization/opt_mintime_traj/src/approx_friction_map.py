@@ -22,9 +22,9 @@ def approx_friction_map(reftrack: np.ndarray,
 
     Documentation:
     A simplified dependency between the friction coefficients (mue) and the lateral distance to the reference line (n)
-    is obtained for each wheel along the racetrack. For this purpose friction coefficients are determined for a fine 
-    grid on the normal vectors from the friction map. Then the dependency between the extracted friction coefficients 
-    and the decision variable n for each path coordinate s_k is described by linear equations (var_friction: "lienar") 
+    is obtained for each wheel along the racetrack. For this purpose friction coefficients are determined for a fine
+    grid on the normal vectors from the friction map. Then the dependency between the extracted friction coefficients
+    and the decision variable n for each path coordinate s_k is described by linear equations (var_friction: "lienar")
     or by linear regression with gaussian basis functions (var_friction: "gauss").
 
     Inputs:

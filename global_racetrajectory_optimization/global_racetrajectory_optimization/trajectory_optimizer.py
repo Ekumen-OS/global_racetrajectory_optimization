@@ -15,8 +15,8 @@ Luca Schwarzenbach
 Documentation:
 This is an adaption of the main_globaltraj.py file which allows to call a function to optimize a trajectory and returns
 the optimized trajectory, the track boundaries, and the lap time.
-"""        
-        
+"""
+
 def trajectory_optimizer(input_path: str,
                          track_name: str,
                          curv_opt_type: str,
@@ -52,7 +52,7 @@ def trajectory_optimizer(input_path: str,
                  "racetraj_vel_3d_stepsize": 0.2,   # [m] vertical lines stepsize in 3D velocity profile plot
                  "spline_normals": False,           # plot spline normals to check for crossings
                  "mintime_plots": False}            # plot states, controls, friction coeffs etc. (mintime only)
-    
+
     # vehicle parameter file -------------------------------------------------------------------------------------------
     file_paths = {"veh_params_file": "racecar_f110.ini"}
 
@@ -82,7 +82,7 @@ def trajectory_optimizer(input_path: str,
                     "var_friction": None,
                     "reopt_mintime_solution": False,
                     "recalc_vel_profile_by_tph": False}
-    
+
     # lap time calculation table ---------------------------------------------------------------------------------------
     lap_time_mat_opts = {"use_lap_time_mat": False,             # calculate a lap time matrix (top speeds and scales)
                          "gg_scale_range": [0.3, 1.0],          # range of gg scales to be covered
@@ -101,10 +101,10 @@ def trajectory_optimizer(input_path: str,
     # ------------------------------------------------------------------------------------------------------------------
     # INITIALIZATION OF PATHS ------------------------------------------------------------------------------------------
     # ------------------------------------------------------------------------------------------------------------------
-    
+
     # input file path --------------------------------------------------------------------------------------------------
     file_paths["inputs"] = input_path
-    
+
     # get current path
     file_paths["module"] = os.path.dirname(os.path.abspath(__file__))
 
@@ -129,7 +129,7 @@ def trajectory_optimizer(input_path: str,
         mintime_opts["var_friction"] = None
         print("WARNING: var_friction option is not None but friction map data is missing for current track -> Setting"
               " var_friction to None!")
-        
+
     # create outputs folder(s)
     os.makedirs(file_paths["module"] + "/outputs", exist_ok=True)
 
@@ -497,7 +497,7 @@ def trajectory_optimizer(input_path: str,
 
                 # store entry in lap time matrix
                 lap_time_matrix[i + 1, j + 1] = t_profile_cl[-1]
-                
+
         # store lap time matrix to file
         np.savetxt(file_paths["lap_time_mat_export"], lap_time_matrix, delimiter=",", fmt="%.3f")
 

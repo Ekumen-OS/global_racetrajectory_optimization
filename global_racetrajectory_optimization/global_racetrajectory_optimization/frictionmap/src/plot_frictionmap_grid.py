@@ -13,7 +13,7 @@ Created on:
 01.12.2018
 
 Documentation:
-To plot a friction map from an already existing file, adjust trackname and filenames at the bottom of this file and 
+To plot a friction map from an already existing file, adjust trackname and filenames at the bottom of this file and
 run this file directly.
 """
 

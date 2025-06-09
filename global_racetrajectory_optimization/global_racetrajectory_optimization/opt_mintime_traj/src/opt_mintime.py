@@ -664,7 +664,7 @@ def opt_mintime(reftrack: np.ndarray,
             # add contribution to scaling factor (for calculating lap time)
             sf_opt.append(B[j] * qj * h[k])
 
-        # calculate used energy 
+        # calculate used energy
         dt_opt.append(sf_opt[0] + sf_opt[1] + sf_opt[2])
         if pars["pwr_params_mintime"]["pwr_behavior"]:
             # Add battery output power [kW] and battery loss power [kW] to retireve entire system power [W] and

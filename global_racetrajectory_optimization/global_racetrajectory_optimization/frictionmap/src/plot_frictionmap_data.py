@@ -14,7 +14,7 @@ Created on:
 01.02.2019
 
 Documentation:
-To plot friction map data from an already existing file, adjust trackname and filenames at the bottom of this file and 
+To plot friction map data from an already existing file, adjust trackname and filenames at the bottom of this file and
 run this file directly.
 """
 
