@@ -7,25 +7,10 @@
   <maintainer email="glpuga@ekumenlabs.com">Gerardo Puga</maintainer>
   <license>TODO: License declaration</license>
 
-  <test_depend>ament_copyright</test_depend>
-  <test_depend>ament_flake8</test_depend>
-  <test_depend>ament_pep257</test_depend>
-  <test_depend>python3-pytest</test_depend>
-
   <exec_depend>python3-numpy</exec_depend>
   <exec_depend>python3-scipy</exec_depend>
   <exec_depend>python3-skimage</exec_depend>
   <exec_depend>python3-sklearn</exec_depend>
-
-  <exec_depend>rclpy</exec_depend>
-  <exec_depend>nav_msgs</exec_depend>
-
-  <exec_depend>launch_ros</exec_depend>
-  <exec_depend>launch</exec_depend>
-  <exec_depend>nav2_lifecycle_manager</exec_depend>
-  <exec_depend>nav2_map_server</exec_depend>
-  <exec_depend>rviz2</exec_depend>
-  <exec_depend>tf_transformations</exec_depend>
 
   <export>
     <build_type>ament_python</build_type>
